@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJCAI 2025 Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gradient-Based Multi-Objective Optimization and its Application in Large Language Models</h1>
+            <p class="subtitle">IJCAI 2025 @ Montreal, Canada and Guangzhou, China</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>The evaluation of deep learning models often involves navigating trade-offs among multiple criteria. This tutorial provides a structured overview of gradient-based multi-objective optimization (MOO) for deep learning models. We begin with the foundational theory, systematically exploring three core solution strategies: identifying a single balanced solution, finding a discrete set of Pareto optimal solutions, and learning a continuous Pareto set. We will cover their algorithmic details, convergence, and generalization. The second half of the tutorial focuses on applying MOO to Large Language Models (LLMs). We will demonstrate how MOO offers a principled framework for fine-tuning and aligning LLMs, effectively navigating trade-offs between multiple objectives. Through practical demonstrations of state-of-the-art methods, participants will gain valuable insights. The session will conclude by discussing emerging challenges and future research directions, equipping attendees to tackle multi-objective problems in their work. This tutorial is based on our survey paper <a href="https://arxiv.org/pdf/2501.10945">Gradient-Based Multi-Objective Deep Learning: Algorithms, Theories, Applications, and Beyond</a>.</p>
+            </section>
+
+            <section id="speakers">
+                <h2>Speakers</h2>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <img src="images/linbj.jpg" alt="Baijiong Lin">
+                        <h3>Baijiong Lin</h3>
+                        <p>PhD Student at HKUST(GZ)</p>
+                        <p class="bio">Multi-task learning and LLM post-training</p>
+                        <p class="links"><a href="https://baijiong-lin.github.io" target="_blank">Personal Website</a></p>
+                    </div>
+                    <!-- Add more speaker cards as needed -->
+                </div>
+            </section>
+
+            <section id="schedule">
+                <h2>Schedule</h2>
+                
+                <div class="subsection">
+                    <h3>Session 1: Foundations and Single-Solution Methods</h3>
+                    <div class="sub-subsection">
+                        <h4>Introduction to MOO in Deep Learning</h4>
+                        <ul>
+                            <li>Motivation and problem formulation</li>
+                            <li>Key concepts: Pareto optimality, dominance, Pareto front</li>
+                            <li>Traditional approaches and limitations</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Finding a Single Pareto Optimal Solution</h4>
+                        <ul>
+                            <li>Loss balancing methods</li>
+                            <li>Gradient weighting methods</li>
+                            <li>Gradient manipulation methods</li>
+                            <li>Practical speedup strategies</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Finding a Finite Set of Solutions</h4>
+                        <ul>
+                            <li>Methods based on preference vectors</li>
+                            <li>Methods without preference vectors</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Finding an Infinite Set of Solutions</h4>
+                        <ul>
+                            <li>Network structures</li>
+                            <li>Training strategies</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="sub-subsection">
+                        <h4>Q&A</h4>
+                    </div> -->
+                </div>
+
+                <div class="subsection">
+                    <h3>Session 2: Advanced Methods and Applications</h3>
+                    <div class="sub-subsection">
+                        <h4>Theoretical Foundations</h4>
+                        <ul>
+                            <li>Convergence analysis (deterministic vs. stochastic)</li>
+                            <li>Generalization bounds</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Application in LLM</h4>
+                        <ul>
+                            <li>Multi-objective fine-tuning</li>
+                            <li>Multi-objective alignment</li>
+                            <li>Multi-objective test-time alignment</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Open Source Libraries</h4>
+                        <ul>
+                            <li>LibMTL</li>
+                            <li>LibMOON</li>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Open Challenges and Future Directions</h4>
+                        <ul>
+                            <li>Theoretical understanding</li>
+                            <li>Reducing computational costs</li>
+                            <li>Handling large number of objectives</li>
+                            <li>Distributed training</li>
+                        </ul>
+                    </div>
+                    <div class="sub-subsection">
+                        <h4>Concluding Discussion</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="venue">
+                <h2>Venue</h2>
+                
+                <div class="venue-info">
+                    <div class="venue-item">
+                        <h3>🏛️ Main Venue - Montreal, Canada</h3>
+                        <p><strong>📅 Date & Time:</strong> TBA (IJCAI 2025)</p>
+                        <p><strong>⏱️ Duration:</strong> Two 1:45h slots</p>
+                        <p><strong>📍 Location:</strong> Montreal, Canada</p>
+                        <p><strong>🚪 Room:</strong> TBA</p>
+                    </div>
+                    
+                    <div class="venue-item">
+                        <h3>🛰️ Satellite Venue - Guangzhou, China</h3>
+                        <p><strong>📅 Date & Time:</strong> TBA</p>
+                        <p><strong>⏱️ Duration:</strong> Two 1:45h slots</p>
+                        <p><strong>📍 Location:</strong> Guangzhou, China</p>
+                        <p><strong>🚪 Room:</strong> TBA</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="materials">
+                <h2>Materials</h2>
+                <ul class="materials-list">
+                    <li><a href="#">Slides (coming soon)</a></li>
+                    <li><a href="https://arxiv.org/pdf/2501.10945">Survey paper</a></li>
+                    <li><a href="https://github.com/Baijiong-Lin/Awesome-Multi-Objective-Deep-Learning">Awesome list</a></li>
+                </ul>
+            </section>
+
+            <!-- <section id="registration">
+                <h2>Registration</h2>
+                <p>Information about how to register for the tutorial.</p>
+            </section> -->
+
+            <!-- <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>Question 1?</h3>
+                    <p>Answer to question 1.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Question 2?</h3>
+                    <p>Answer to question 2.</p>
+                </div>
+            </section> -->
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>For any questions regarding the tutorial, please contact <a href="mailto:wchenbx@connect.ust.hk">Weiyu Chen</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; GradNexus Team. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
