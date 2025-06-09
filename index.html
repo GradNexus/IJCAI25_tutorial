@@ -16,6 +16,11 @@
 
     <nav>
         <div class="container">
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#speakers">Speakers</a></li>
@@ -187,5 +192,40 @@
             <p>&copy; GradNexus Team. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // 移动端导航菜单控制
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    // 切换汉堡菜单按钮的状态
+                    this.classList.toggle('active');
+                    
+                    // 切换导航菜单的显示状态
+                    navMenu.classList.toggle('active');
+                });
+                
+                // 点击导航链接后关闭菜单
+                const navLinks = navMenu.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+                
+                // 点击页面其他地方关闭菜单
+                document.addEventListener('click', function(e) {
+                    if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                        mobileMenuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
