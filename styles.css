@@ -35,6 +35,13 @@ a:hover {
 section {
     margin-bottom: 60px;
     padding-top: 20px;
+    scroll-margin-top: 80px; /* 为sticky导航栏预留空间 */
+}
+
+/* 为锚点跳转优化的根元素 */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* 备用方案 */
 }
 
 /* Header Styles */
@@ -441,6 +448,15 @@ footer {
     
     .venue-info {
         grid-template-columns: 1fr;
+    }
+    
+    /* 移动端调整scroll-margin-top */
+    section {
+        scroll-margin-top: 70px;
+    }
+    
+    html {
+        scroll-padding-top: 70px;
     }
 }
 
